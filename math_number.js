@@ -28,6 +28,6 @@ console.log(myNum.toFixed(2));
 console.log(myNum.toPrecision(3));
 // 557
 
-console.log(myNum.toLocaleString(","));
+console.log(myNum.toLocaleString());
 
 
