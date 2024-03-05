@@ -68,3 +68,15 @@ console.log(clone);
 // or Object.assign()
 
 console.log(two2.hasOwnProperty(4));
+
+// But we can use backend data comes in the form of json
+
+
+const myObj2 = [
+    {
+
+    },
+    {
+        
+    }
+]
