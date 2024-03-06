@@ -9,3 +9,12 @@ const funObj = {
 const { myEmail : email} = funObj;
 
 console.log(email);
+
+
+// json
+
+{
+    "name" :"dheeraj",
+     "age":"26",
+
+};
