@@ -17,3 +17,32 @@
 console.log(c);
 
 // But c is an access outside the block scope because var is an global scope.
+
+
+
+// scope mini closure 
+
+function sayHello()
+{
+    const myName = "dheeraj";
+  
+    function SayMyname()
+    {
+        console.log(myName);
+    }
+    SayMyname()
+}
+
+sayHello();
+
+
+// function hoisted()
+// {
+//     console.log("whats'app");   
+// }
+
+// function another(hoisted){
+//       console.log("how");   
+// }
+
+// another();
