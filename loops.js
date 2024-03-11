@@ -36,11 +36,19 @@ for (let i=1;i<=20;i++)
 
 // do-while
 
-let i =1;
+// let i =1;
 
-do{
-    console.log("dheeraj");
-    i++;
-}while(i<5);
+// do{
+//     console.log("dheeraj");
+//     i++;
+// }while(i<5);
 
 
+
+
+const heros = ["shaktiman","junior-g","spider-man"];
+
+for(let i=0;i<=heros.length;i++)
+{
+    console.log(`the heros are ${heros[i]}`);
+}
