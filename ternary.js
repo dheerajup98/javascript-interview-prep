@@ -1,3 +1,5 @@
+// ternary operator
+
 const icecream = 200;
 
 icecream >= 300 ? console.log("more tha 300" ) : console.log("less than 200");
