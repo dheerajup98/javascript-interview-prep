@@ -115,16 +115,73 @@ console.log("javascript output questions..");
 
 
 //11.
-function Person(firstName, lastName) {
+// function Person(firstName, lastName) {
     // this.firstName = firstName;
     // this.lastName = lastName;
 
-    return console.log (firstName , lastName);
-  }
+  //   return console.log (firstName , lastName);
+  // }
   
-   Person('Lydia', 'Hallie');
+  //  Person('Lydia', 'Hallie');
 //    Person('Sarah', 'Smith');
   
 //   console.log(lydia);
 //   console.log(sarah);
   
+//12.
+// function sum(a, b) {
+//   return console.log(a + b);
+// }
+
+// sum(1, '2');
+
+//13.
+// let number = 0;
+// console.log(number++);
+// console.log(++number);
+// console.log(number);
+
+//14.
+// function getPersonInfo(one, two, three) {
+//   console.log(one);
+//   console.log(two);
+//   console.log(three);
+// }
+
+// const person = 'Lydia';
+// const age = 21;
+
+// getPersonInfo`${person} is ${age} years old`;
+
+//15.
+// function checkAge(data) {
+//   if (data =={ age: 18 }) {
+//     console.log('You are an adult!');
+//   } else if (data == { age: 18 }) {
+//     console.log('You are still an adult.');
+//   } else {
+//     console.log(`Hmm.. You don't have an age I guess`);
+//   }
+// }
+
+// checkAge({ age: 18 });
+
+//16.
+// function getAge(...args) {
+//   console.log(typeof args);
+// }
+
+// getAge(12);
+
+//17.
+// function getAge() {
+//   'use strict';
+//   age = 21;
+//   console.log(age);
+// }
+
+// getAge();
+
+//18.
+const sum = eval('10*10+5');
+console.log(sum);
