@@ -1,6 +1,6 @@
 // falsy values
 
-// false, "", 0 , -0, undefined, null, 0n;
+// false, "", 0 , -0, undefined, null, 0n, NaN;
 
 // truthy values
 
