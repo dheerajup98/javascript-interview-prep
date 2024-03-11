@@ -6,15 +6,8 @@ const funObj = {
 
 // object destrucuring
 
-const { myEmail : email} = funObj;
+const { myEmail : email, myAge,} = funObj;
 
-console.log(email);
+console.log(email, myAge);
 
 
-// json
-
-{
-    "name" :"dheeraj",
-     "age":"26",
-
-};

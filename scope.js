@@ -16,7 +16,7 @@
 // console.log(b);
 console.log(c);
 
-// But c is an access outside the block scope because var is an global scope.
+// But c is an access outside the block scope because var is an function scope.
 
 
 

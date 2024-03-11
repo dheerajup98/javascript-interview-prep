@@ -8,15 +8,15 @@ const myObj = {
     isLogged: true,
     "full name":"suresh upadhyay",
     [mySym] : 26,
-    myFunc : function()
-    {
-        console.log("user logged");
-    }
+     dheeraj()
+     {
+        console.log(`user is loggged ${this.isLogged}`);
+     }
 }
 
 // console.log(myObj["full name"]);
 
-// console.log(myObj["age"]);
+console.log(myObj.dheeraj());
 
 // console.log(myObj [mySym])
 

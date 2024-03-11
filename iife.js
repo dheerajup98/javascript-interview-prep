@@ -21,3 +21,5 @@
 ((name)=>{
   console.log(`my name is ${name}`);
 })("dheeraj");
+
+// passing value
