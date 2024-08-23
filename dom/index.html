@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom learning..</title>
+    <style>
+       #circle{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin-left:45%;
+        margin-top: 200px;
+        border: 2px solid black;
+       }
+
+       button{
+        font-size: 25px;
+        margin-left: 45%;
+        background-color: red;
+        cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+    <div id="circle">
+    </div>
+
+    <button>On</button>
+
+
+
+    <script>
+      
+      let button = document.querySelector('button');
+      let circle = document.getElementById('circle');
+
+      var flag = 0;
+    
+
+      button.addEventListener('click',function(){
+        if(flag == 0){
+            circle.style.backgroundColor = "yellow";
+            flag = 1
+        }
+        else{
+            circle.style.backgroundColor = "transparent";
+            flag = 0;
+        }
+      })
+
+      let newElem = document.createElement('h2');
+
+      newElem.innerText = "hello dheeraj";
+        circle.prepend(newElem)
+
+        
+        newElem.replaceWith('h3',"namaste dheeraj")
+    </script>
+</body>
+</html>

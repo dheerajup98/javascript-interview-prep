@@ -54,4 +54,46 @@ const arrObj = [
 
 
 const arrNewObj = arrObj.reduce((acc,item)=>acc+item.score,0);
-console.log(arrNewObj)
+// console.log(arrNewObj)
+
+
+// ques
+
+const obj = [
+    {firstName: "dheeraj", lastName: "upadhyay", age: 26},
+    {firstName: "soumya", lastName: "tiwari", age: 25},
+    {firstName: "sahil", lastName: "pandey", age: 55},
+    {firstName: "shubham", lastName: "shukla", age: 69}
+]
+
+const mapOutput = obj.map((i)=> i.firstName + " " + i.lastName);
+// console.log(mapOutput)
+
+const filterAge = obj.filter((i)=> i.age<30);
+// console.log(filterAge)
+
+const output = obj.filter((x)=> x.age<30).map((x)=> x.firstName);
+// console.log(output)
+
+
+
+const myArr = [25,98,6,47,32];
+
+const result = myArr.map((i)=>{
+    return i*2;
+})
+
+console.log(result);
+console.log(myArr.length);
+
+const sum = myArr.reduce((acc,curr)=>{
+    return acc = acc+curr;
+});
+
+console.log(sum);
+
+const filterArr = myArr.filter((f)=>{
+    return f%2===0;
+});
+
+console.log(filterArr);

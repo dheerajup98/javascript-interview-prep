@@ -1,4 +1,4 @@
-console.log("javascript output questions..");
+// console.log("javascript output questions..");
 
 // 1.
 // function sayHi() {
@@ -183,5 +183,211 @@ console.log("javascript output questions..");
 // getAge();
 
 //18.
-const sum = eval('10*10+5');
-console.log(sum);
+const sum = eval("10*20+89");
+// console.log(sum);
+
+//eval evaluates code that's passed as a string. If it's an expression, like in this case, it evaluates the expression. The expression is 10 * 10 + 5. This returns the number 105.
+
+//19.
+var num = 8;
+var num = 10;
+
+// console.log(num);
+
+//20.
+// const obj = { 1: 'a', 2: 'b', 3: 'c' };
+// const set = new Set([1, 2, 3, 4, 5]);
+
+// obj.hasOwnProperty('1');
+// obj.hasOwnProperty(1);
+// set.has('1');
+// set.has(1);
+
+//All object keys (excluding Symbols) are strings under the hood, even if you don't type it yourself as a string. This is why obj.hasOwnProperty('1') also returns true
+
+//21.
+
+// const obj = { a: 'one', b: 'two', a: 'three' };
+// console.log(obj);
+
+//If you have two keys with the same name, the key will be replaced.
+
+
+//22.
+for (let i = 1; i < 5; i++) {
+  if (i === 3) continue;
+  // console.log(i);
+}
+
+//23.
+String.prototype.giveLydiaPizza = () => {
+  return 'Just give Lydia pizza already!';
+};
+
+const name = 'Lydia';
+
+// console.log(name.giveLydiaPizza())
+
+//24.
+const a = {};
+const b = { key: 'b' };
+const c = { key: 'c' };
+
+a[b] = 123;
+a[c] = 456;
+
+// console.log(a[b]);
+
+
+//25.
+const foo = () => console.log('First');
+const bar = () => setTimeout(() => console.log('Second'));
+const baz = () => console.log('Third');
+
+// bar();
+// foo();
+// baz();
+
+
+//26.
+{/* <div onclick="console.log('first div')">
+  <div onclick="console.log('second div')">
+    <button onclick="console.log('button')">
+      Click!
+    </button>
+  </div>
+</div> */}
+
+//The deepest nested element that caused the event is the target of the event. You can stop bubbling by event.stopPropagation.
+
+//27.
+{/* <div onclick="console.log('div')"> */}
+  {/* <p onclick="console.log('p')">
+    Click here!
+  </p>
+</div> */}
+
+
+//28.
+const person = { name: 'Lydia' };
+
+function sayHi(age) {
+  return `${this.name} is ${age}`;
+}
+
+// console.log(sayHi.call(person, 21));
+// console.log(sayHi.bind(person, 21));
+
+
+//30.
+function sayHi() {
+  return (() => 2)();
+}
+
+// console.log(typeof sayHi());
+
+//The sayHi function returns the returned value of the immediately invoked function expression (IIFE). This function returned 0, which is type "number"
+
+//31.
+0;
+new Number(0);
+('');
+(' ');
+new Boolean(false);
+undefined;
+
+//falsy value are -> 0, (""), undefined
+
+//32.
+// console.log(typeof typeof 1);
+
+//33.
+const numbers = [1, 2, 3];
+numbers[10] = 11;
+// console.log(numbers);
+
+
+//34.
+// (() => {
+//   let x, y;
+//   try {
+//     throw new Error();
+//   } catch (x) {
+//     (x = 1), (y = 2);
+//     console.log(x);
+//   }
+//   console.log(x);
+//   console.log(y);
+// })();
+
+
+//35.
+const r   = [[0, 1], [2, 3]].reduce(
+  (acc, cur) => {
+    return acc.concat(cur);
+  },
+  [1, 2],
+);
+
+// console.log(r);
+
+//36.
+// setInterval(() => console.log('Hi'), 1000);
+
+
+//37.
+[...'Lydia'];
+//A string is an iterable. The spread operator maps every character of an iterable to one element.
+
+//38.
+function* generator(i) {
+  yield i;
+  yield i * 2;
+}
+
+const gen = generator(10);
+
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+
+//39.
+// const firstPromise = new Promise((res, rej) => {
+//   setTimeout(res, 500, 'one');
+// });
+
+// const secondPromise = new Promise((res, rej) => {
+//   setTimeout(res, 100, 'two');
+// });
+
+// Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
+
+//40.
+// let person1 = { name: 'Lydia' };
+// let members = [person];
+// person = null;
+
+// console.log(members);
+
+
+const arr = [25,89,36,75];
+
+arr.forEach((value,index,array)=>{
+  return array[index]= value*10;
+})
+
+// console.log(arr);
+
+const arr1 = [1,2,3,4,5,6];
+const arr2 = [];
+
+arr1.forEach((i)=>{
+  return arr2.push(i*2);
+});
+
+// console.log(arr2);
+
+const pro = new Promise((res,rej)=>{
+   setTimeout(()=>{
+    res("resolved successfully");
+   },1000);
+  });
